@@ -18,6 +18,7 @@ function App() {
           <Route path="/customers" component={Customer} />
           <Route path="/Rentals" component={Rentals} />
           <Route path="/not-found" component={NotFound} />
+          <Redirect from="/MoviesRental" exact to="/movies" />
           <Redirect from="/" exact to="/movies" />
           <Redirect to="/not-found" />
         </Switch>
